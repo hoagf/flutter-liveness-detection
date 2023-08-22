@@ -1,57 +1,45 @@
-# HMS Flutter Plugins
-
-[![license](https://img.shields.io/badge/license-Apache--2.0-green)](./LICENSE)
-
-This repo contains the source code for HMS Flutter first-party plugins, which are developed by the HMS Core team.
-
-These plugins enable access to using kit-specific APIs. For more information
-about plugins, and how to use them, see
-[Official Documentations](https://developer.huawei.com/consumer/en/doc/overview/HMS-Core-Plugin?ha_source=hms1).
-
-## Plugins
-
-These are the available plugins in this repository.
-
-| Plugin | Version | Documentation | Demo Project |
-|---|---|---|---|
-| [Account](./flutter-hms-account) | [![version](https://img.shields.io/pub/v/huawei_account?style=for-the-badge)](https://pub.dev/packages/huawei_account) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001050727032?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001051087484?ha_source=hms1) | [example](./flutter-hms-account/example/) |
-| [Ads](./flutter-hms-ads) | [![version](https://img.shields.io/pub/v/huawei_ads?style=for-the-badge)](https://pub.dev/packages/huawei_ads) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparedevenv-0000001050196443?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001051055789?ha_source=hms1) | [example](./flutter-hms-ads/example/) |
-| [Ads Prime](./flutter-hms-adsprime) | [![version](https://img.shields.io/pub/v/huawei_adsprime?style=for-the-badge)](https://pub.dev/packages/huawei_adsprime) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparedevenv-0000001050196443?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001051055789?ha_source=hms1) | [example](./flutter-hms-adsprime/example/) |
-| [Analytics](./flutter-hms-analytics) | [![version](https://img.shields.io/pub/v/huawei_analytics?style=for-the-badge)](https://pub.dev/packages/huawei_analytics) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparing-dev-env-0000001050169140?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001050176764?ha_source=hms1) | [example](./flutter-hms-analytics/example/) |
-| [AR Engine](./flutter-hms-ar) | [![version](https://img.shields.io/pub/v/huawei_ar?style=for-the-badge)](https://pub.dev/packages/huawei_ar) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparing-the-dev-env-0000001058904505?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/flutter-apis-overview-0000001059271506?ha_source=hms1) | [example](./flutter-hms-ar/example/) |
-| [HMS Availability](./flutter-hms-availability) | [![version](https://img.shields.io/pub/v/huawei_hmsavailability?style=for-the-badge)](https://pub.dev/packages/huawei_hmsavailability) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/introduction-0000001128351789?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/overview-0000001081433280-V1?ha_source=hms1) | [example](./flutter-hms-availability/example/) |
-| [Awareness](./flutter-hms-awareness) | [![version](https://img.shields.io/pub/v/huawei_awareness?style=for-the-badge)](https://pub.dev/packages/huawei_awareness) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparing-dev-environment-0000001073460239?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001074252416?ha_source=hms1) | [example](./flutter-hms-awareness/example/) |
-| [Contact Shield](./flutter-hms-contact-shield) | [![version](https://img.shields.io/pub/v/huawei_contactshield?style=for-the-badge)](https://pub.dev/packages/huawei_contactshield) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001063534692?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/overview-0000001063989606-V1?ha_source=hms1) | [example](./flutter-hms-contact-shield/example/) |
-| [Drive](./flutter-hms-drive) | [![version](https://img.shields.io/pub/v/huawei_drive?style=for-the-badge)](https://pub.dev/packages/huawei_drive) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/introduction-0000001077725482?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/overview-0000001096843987-V1?ha_source=hms1) | [example](./flutter-hms-drive/example/) |
-| [Dynamic Tag Manager](./flutter-hms-dtm) | [![version](https://img.shields.io/pub/v/huawei_dtm?style=for-the-badge)](https://pub.dev/packages/huawei_dtm) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001062877462?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/hms-dtm-0000001062337272?ha_source=hms1) | [example](./flutter-hms-dtm/example/) |
-| [FIDO](./flutter-hms-fido) | [![version](https://img.shields.io/pub/v/huawei_fido?style=for-the-badge)](https://pub.dev/packages/huawei_fido) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/introduction-0000001096579081?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/overview-0000001096697417-V1?ha_source=hms1) | [example](./flutter-hms-fido/example/) |
-| [Game Service](./flutter-hms-gameservice) | [![version](https://img.shields.io/pub/v/huawei_gameservice?style=for-the-badge)](https://pub.dev/packages/huawei_gameservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides-V1/introduction-0000001080980430-V1?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/flutter-apis-overview-0000001080990190-V1?ha_source=hms1) | [example](./flutter-hms-gameservice/example/) |
-| [Health](./flutter-hms-health) | [![version](https://img.shields.io/pub/v/huawei_health?style=for-the-badge)](https://pub.dev/packages/huawei_health) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prep-dev-env-0000001073758189?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/flutter-overview-0000001073231093?ha_source=hms1) | [example](./flutter-hms-health/example/) |
-| [In-App Purchases](./flutter-hms-iap) | [![version](https://img.shields.io/pub/v/huawei_iap?style=for-the-badge)](https://pub.dev/packages/huawei_iap) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparing-dev-environment-0000001051081604?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001051005695?ha_source=hms1) | [example](./flutter-hms-iap/example/) |
-| [Location](./flutter-hms-location) | [![version](https://img.shields.io/pub/v/huawei_location?style=for-the-badge)](https://pub.dev/packages/huawei_location) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001050433505?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/fused-location-client-0000001050179418?ha_source=hms1) | [example](./flutter-hms-location/example/) |
-| [Map](./flutter-hms-map) | [![version](https://img.shields.io/pub/v/huawei_map?style=for-the-badge)](https://pub.dev/packages/huawei_map) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/preparing-dev-environment-0000001050190755?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/bitmap-desc-0000001050430775?ha_source=hms1) | [example](./flutter-hms-map/example/) |
-| [ML](./flutter-hms-ml) | [![version](https://img.shields.io/pub/v/huawei_ml?style=for-the-badge)](https://pub.dev/packages/huawei_ml) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001052511642?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001052975193?ha_source=hms1) | [example](./flutter-hms-ml/example/) |
-| [ML Body](./flutter-hms-mlbody) | [![version](https://img.shields.io/pub/v/huawei_ml_body?style=for-the-badge)](https://pub.dev/packages/huawei_ml_body) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001052511642?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001226846399?ha_source=hms1) | [example](./flutter-hms-mlbody/example/) |
-| [ML Image](./flutter-hms-mlimage) | [![version](https://img.shields.io/pub/v/huawei_ml_image?style=for-the-badge)](https://pub.dev/packages/huawei_ml_image) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001052511642?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/mlimg-overview-0000001237615881?ha_source=hms1) | [example](./flutter-hms-mlimage/example/) |
-| [ML Language](./flutter-hms-mllanguage) | [![version](https://img.shields.io/pub/v/huawei_ml_language?style=for-the-badge)](https://pub.dev/packages/huawei_ml_language) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001052511642?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001194201510?ha_source=hms1) | [example](./flutter-hms-mllanguage/example/) |
-| [ML Text](./flutter-hms-mltext) | [![version](https://img.shields.io/pub/v/huawei_ml_text?style=for-the-badge)](https://pub.dev/packages/huawei_ml_text) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001052511642?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/mltext-overview-0000001181686694?ha_source=hms1) | [example](./flutter-hms-mltext/example/) |
-| [3D Modeling](./flutter-hms-modeling) | [![version](https://img.shields.io/pub/v/huawei_modeling3d?style=for-the-badge)](https://pub.dev/packages/huawei_modeling3d) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001210329461?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001208666915?ha_source=hms1) | [example](./flutter-hms-modeling/example/) |
-| [Nearby Service](./flutter-hms-nearbyservice) | [![version](https://img.shields.io/pub/v/huawei_nearbyservice?style=for-the-badge)](https://pub.dev/packages/huawei_nearbyservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001074265856?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001074428872?ha_source=hms1) | [example](./flutter-hms-nearbyservice/example/) |
-| [Push](./flutter-hms-push) | [![version](https://img.shields.io/pub/v/huawei_push?style=for-the-badge)](https://pub.dev/packages/huawei_push) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001051136140?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/push-overview-0000001057463088?ha_source=hms1) | [example](./flutter-hms-push/example/) |
-| [Push-FCM](./flutter-hms-pushfcm) | [![version](https://img.shields.io/pub/v/huawei_push_fcm?style=for-the-badge)](https://pub.dev/packages/huawei_push_fcm) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001051136140?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/push-fcm-overview-0000001193494744?ha_source=hms1) | [example](./flutter-hms-pushfcm/example/) |
-| [Safety Detect](./flutter-hms-safetydetect) | [![version](https://img.shields.io/pub/v/huawei_safetydetect?style=for-the-badge)](https://pub.dev/packages/huawei_safetydetect) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prep-dev-env-0000001061376620?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001060304308?ha_source=hms1) | [example](./flutter-hms-safetydetect/example/) |
-| [Scan](./flutter-hms-scan) | [![version](https://img.shields.io/pub/v/huawei_scan?style=for-the-badge)](https://pub.dev/packages/huawei_scan) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001054637955?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001054390809?ha_source=hms1) | [example](./flutter-hms-scan/example/) |
-| [Site](./flutter-hms-site) | [![version](https://img.shields.io/pub/v/huawei_site?style=for-the-badge)](https://pub.dev/packages/huawei_site) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/prepare-dev-env-0000001050181325?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/search-0000001050285502?ha_source=hms1) | [example](./flutter-hms-site/example/) |
-| [Wallet](./flutter-hms-wallet) | [![version](https://img.shields.io/pub/v/huawei_wallet?style=for-the-badge)](https://pub.dev/packages/huawei_wallet) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/service-introduction-0000001096846895?ha_source=hms1) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References-V1/flutter-overview-0000001078375892-V1?ha_source=hms1) | [example](./flutter-hms-wallet/example/) |
+<p align="center">
+  <h1 align="center">Huawei ML Body Flutter Plugin</h1>
+</p>
 
 
-## Question or issues
+<p align="center">
+  <a href="https://pub.dev/packages/huawei_ml_body"><img src="https://img.shields.io/pub/v/huawei_ml_body?style=for-the-badge" alt="pub.dev version"></a>
+</p>
 
-If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
+----
+
+Flutter ML Kit Body Plugin provides APIs from Huawei ML Kit SDK. The plugin contains following APIs:
+
+- Face Recognition
+- Face Verification
+- Skeleton Recognition
+- Hand Keypoint Recognition
+- Hand Gesture Recognition
+- Liveness Detection
+
+[Learn More](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/introduction-0000001051432503?ha_source=hms1)
+
+## Installation
+
+Please see [pub.dev](https://pub.dev/packages/huawei_ml_body/install) and [AppGallery Connect Configuration](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/config-agc-0000001164929484?ha_source=hms1).
+
+## Documentation
+
+- [Quick Start](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-Guides/body-related-services-0000001074129424?ha_source=hms1)
+- [Reference](https://developer.huawei.com/consumer/en/doc/development/HMS-Plugin-References/overview-0000001052975193?ha_source=hms1)
+
+## Questions or Issues
 
 If you have questions about how to use HMS samples, try the following options:
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with
+**huawei-mobile-services**.
+- [Github](https://github.com/HMS-Core/hms-flutter-plugin) is the official repository for these plugins, You can open an issue or submit your ideas.
+- [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001) HMS Core Module is great for general questions, or seeking recommendations and opinions.
+- [Huawei Developer Docs](https://developer.huawei.com/consumer/en/doc/overview/HMS-Core-Plugin?ha_source=hms1) is place to official documentation for all HMS Core Kits, you can find detailed documentations in there.
 
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with `huawei-mobile-services`.
-- [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001?ha_source=hms1) HMS Core Module is great for general questions, or seeking recommendations and opinions.
+If you run into a bug in our samples, please submit an issue to the [GitHub repository](https://github.com/HMS-Core/hms-flutter-plugin).
 
-If you run into a bug in our samples, please submit an [issue](https://github.com/HMS-Core/hms-flutter-plugin/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/HMS-Core/hms-flutter-plugin/pulls) with a fix.
+## License
+
+Huawei ML Body Flutter Plugin is licensed under [Apache 2.0 license](LICENSE) 
