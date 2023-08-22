@@ -34,15 +34,7 @@ import io.flutter.view.TextureRegistry;
 public class HuaweiMlBodyPlugin implements FlutterPlugin, ActivityAware {
     private FlutterPluginBinding mFlutterPluginBinding;
     private MethodChannel appChannel;
-    private MethodChannel faceMethodChannel;
-    private MethodChannel face3DMethodChannel;
-    private MethodChannel handMethodChannel;
-    private MethodChannel gestureMethodChannel;
-    private MethodChannel skeletonMethodChannel;
-    private MethodChannel verificationMethodChannel;
     private MethodChannel livenessMethodChannel;
-    private MethodChannel interactiveLivenessMethodChannel;
-    private MethodChannel lensMethodChannel;
 
     private void onAttachedToEngine(final BinaryMessenger messenger, final Activity activity, final TextureRegistry registry) {
         initChannels(messenger);
@@ -51,28 +43,12 @@ public class HuaweiMlBodyPlugin implements FlutterPlugin, ActivityAware {
 
     private void initChannels(BinaryMessenger messenger) {
         appChannel = new MethodChannel(messenger, Constants.APP_CHANNEL);
-        faceMethodChannel = new MethodChannel(messenger, Constants.FACE_CHANNEL);
-        face3DMethodChannel = new MethodChannel(messenger, Constants.FACE_3D_CHANNEL);
-        handMethodChannel = new MethodChannel(messenger, Constants.HAND_CHANNEL);
-        gestureMethodChannel = new MethodChannel(messenger, Constants.GESTURE_CHANNEL);
-        skeletonMethodChannel = new MethodChannel(messenger, Constants.SKELETON_CHANNEL);
-        verificationMethodChannel = new MethodChannel(messenger, Constants.VERIFICATION_CHANNEL);
         livenessMethodChannel = new MethodChannel(messenger, Constants.LIVENESS_CHANNEL);
-        interactiveLivenessMethodChannel = new MethodChannel(messenger, Constants.INTERACTIVE_LIVENESS_CHANNEL);
-        lensMethodChannel = new MethodChannel(messenger, Constants.LENS_CHANNEL);
     }
 
     private void setHandlers(Activity activity, BinaryMessenger messenger, TextureRegistry registry) {
         appChannel.setMethodCallHandler(new AppHandler(activity));
-        faceMethodChannel.setMethodCallHandler(new FaceMethodHandler(activity));
-        face3DMethodChannel.setMethodCallHandler(new Face3dMethodHandler(activity));
-        handMethodChannel.setMethodCallHandler(new HandMethodHandler(activity));
-        gestureMethodChannel.setMethodCallHandler(new GestureHandler(activity));
-        skeletonMethodChannel.setMethodCallHandler(new SkeletonHandler(activity));
-        verificationMethodChannel.setMethodCallHandler(new VerificationHandler(activity));
         livenessMethodChannel.setMethodCallHandler(new LivenessHandler(activity));
-        interactiveLivenessMethodChannel.setMethodCallHandler(new InteractiveLivenessHandler(activity, messenger));
-        lensMethodChannel.setMethodCallHandler(new LensHandler(activity, lensMethodChannel, registry));
     }
 
     @Override
@@ -107,28 +83,12 @@ public class HuaweiMlBodyPlugin implements FlutterPlugin, ActivityAware {
 
     private void removeChannels() {
         appChannel = null;
-        faceMethodChannel = null;
-        face3DMethodChannel = null;
-        handMethodChannel = null;
-        gestureMethodChannel = null;
-        skeletonMethodChannel = null;
-        verificationMethodChannel = null;
         livenessMethodChannel = null;
-        interactiveLivenessMethodChannel = null;
-        lensMethodChannel = null;
     }
 
     @Override
     public void onDetachedFromActivity() {
         appChannel.setMethodCallHandler(null);
-        faceMethodChannel.setMethodCallHandler(null);
-        face3DMethodChannel.setMethodCallHandler(null);
-        handMethodChannel.setMethodCallHandler(null);
-        gestureMethodChannel.setMethodCallHandler(null);
-        skeletonMethodChannel.setMethodCallHandler(null);
-        verificationMethodChannel.setMethodCallHandler(null);
         livenessMethodChannel.setMethodCallHandler(null);
-        interactiveLivenessMethodChannel.setMethodCallHandler(null);
-        lensMethodChannel.setMethodCallHandler(null);
     }
 }

@@ -17,7 +17,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:huawei_ml_body/huawei_ml_body.dart';
-import 'package:huawei_ml_body_example/screens/home.dart';
 import 'package:huawei_ml_body_example/screens/liveness_example.dart';
 
 void main() async {
