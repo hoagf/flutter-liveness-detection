@@ -14,7 +14,7 @@
     limitations under the License.
 */
 
-package android.src.main.java.com.huawei.hms.flutter.mlbody.handlers;
+package com.huawei.hms.flutter.mlbody.handlers;
 
 import android.content.Context;
 
