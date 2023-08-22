@@ -22,15 +22,7 @@ import androidx.annotation.NonNull;
 
 import com.huawei.hms.flutter.mlbody.constant.Constants;
 import com.huawei.hms.flutter.mlbody.handlers.AppHandler;
-import com.huawei.hms.flutter.mlbody.handlers.Face3dMethodHandler;
-import com.huawei.hms.flutter.mlbody.handlers.FaceMethodHandler;
-import com.huawei.hms.flutter.mlbody.handlers.GestureHandler;
-import com.huawei.hms.flutter.mlbody.handlers.HandMethodHandler;
-import com.huawei.hms.flutter.mlbody.handlers.InteractiveLivenessHandler;
-import com.huawei.hms.flutter.mlbody.handlers.LensHandler;
 import com.huawei.hms.flutter.mlbody.handlers.LivenessHandler;
-import com.huawei.hms.flutter.mlbody.handlers.SkeletonHandler;
-import com.huawei.hms.flutter.mlbody.handlers.VerificationHandler;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.engine.plugins.activity.ActivityAware;
