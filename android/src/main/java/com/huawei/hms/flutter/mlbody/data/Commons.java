@@ -45,9 +45,14 @@ public class Commons {
     }
 
     public static byte[] bitmapToByteArray(Bitmap bitmap) {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-        return byteArrayOutputStream.toByteArray();
+        byte[] hh = new byte[0];
+        if(bitmap!=null){
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+            hh = byteArrayOutputStream.toByteArray();
+        }
+        
+        return hh;
     }
 
     public static Bitmap bitmapFromPath(String path) {
