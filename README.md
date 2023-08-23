@@ -1,3 +1,5 @@
+This repo is a shortened version of Flutter HMS plugins, it only has Liveness Detection plugin. The source code is shorter and the package size will be smaller.
+
 <p align="center">
   <h1 align="center">Huawei ML Body Flutter Plugin</h1>
 </p>
